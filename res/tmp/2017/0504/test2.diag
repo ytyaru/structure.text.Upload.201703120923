@@ -1,0 +1,15 @@
+blockdiag {
+#    orientation = portrait
+
+    型 [style = "1,8"]
+    Type [style = "4,8"]
+    Class [style = "4,4"]
+
+    型 -> 物 [label = "生成"];
+    Type -> Object [label = "Create"];
+    Class -> Instance [label = "Create"];
+    
+    group {型; 物;}
+    group {Type; Object;}
+    group {Class; Instance;}
+}
